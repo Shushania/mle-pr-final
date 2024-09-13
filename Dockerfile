@@ -5,9 +5,9 @@ COPY requirements.txt ./services/requirements.txt
 WORKDIR services 
 RUN pip3 install -r requirements.txt
 
-COPY ./service .
-COPY ./models .
-COPY ./prometheus .
+COPY ./service ./service
+COPY ./models ./models
+COPY ./prometheus ./prometheus
 
 EXPOSE 8000 
 # ${MAIN_APP_PORT}
